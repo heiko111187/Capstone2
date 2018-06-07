@@ -24,6 +24,10 @@ html {
   color: #4A4A4A;
 }
 
+a {
+  color: blue;
+}
+
 body {
   font-weight: normal;
 }
@@ -100,6 +104,14 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
 .mainBanner {
   background-color: #D8D8D8;
 
@@ -136,4 +148,60 @@ h1 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
+
+  width: 100%;
+}
+
+.infoMain {
+  padding: 32px 0 32px 24px;
+
+  width: 60%;
+
+  border-right: 1px solid #D8D8D8;
+}
+.infoMain img {
+  margin: 0 24px 32px 0;
+}
+
+.quote {
+  margin-top: 24px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.infoSide {
+  padding: 32px 0;
+}
+
+.infoSide ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.infoSide li:last-child {
+  background-color: #D8D8D8;
+}
+
+.infoSide li {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  line-height: 2.5;
+
+  border: 1px solid #D8D8D8;
+}
+
+.info img {
+  height: auto;
+  width: 35%;
+  margin: 16px;
 }
