@@ -131,13 +131,13 @@ h3 {
 
 .mainBanner img {
   width: 60%;
-
   margin: 32px 24px;
 }
 
 .mainBanner span {
   display: block;
-  line-height: 4;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 .button {
@@ -147,6 +147,14 @@ h3 {
   text-align: center;
 
   max-width: 400px;
+
+  font-weight: normal;
+  padding: 8px;
+  margin-top: 24px;
+}
+
+.mainBanner h1 {
+  margin-bottom: 24px;
 }
 
 .infoSection {
@@ -187,7 +195,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: flex-end;
 }
 
 .infoSide li:last-child {
@@ -217,8 +225,6 @@ p {
 .cta {
   background-color: #D7D7D7;
 
-  padding: 32px 0;
-
   width: 100%;
 
   text-align: center;
@@ -226,16 +232,42 @@ p {
 
 .courses {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
+  align-content: space-between;
 
-  margin: 32px 72px 0 72px;
+  margin: 0 56px;
 }
 
 .course {
   background-color: white;
   text-align: left;
+
+  max-width: 385px;
+  height: 400px;
+
+  margin: 16px;
+
+  color: #9B9B9B;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.course h3 {
+  padding: 16px;
+  color: #4A4A4A;
+}
+
+.course span {
+  padding: 8px 16px;
+}
+
+.course p {
+  padding: 8px 16px 24px 16px;
 }
 
 .thesis {
@@ -254,17 +286,67 @@ p {
   text-align: left;
 }
 
+.exhibit .main {
+  width: 60%;
+  margin-right: 24px;
+}
+
 .exhibit video {
-  margin: 0 24px 24px 0;
+  margin-bottom: 24px;
+}
+
+.exhibit .main h3 {
+  margin-bottom: 8px;
+}
+
+.exhibit .side {
+  width: 40%;
+}
+
+.side li:first-child {
+  background-color: #D8D8D8;
 }
 
 .side .info {
   border: none;
 }
 
+.side img {
+  width: 35%;
+  height: auto;
+}
+
+.side h3 {
+  line-height: 1.4;
+}
+
+.side .description {
+  width: 65%;
+}
+
 footer {
   background-color: #F3F5F5;
   border-top: 1px solid #D8D8D8;
-  padding-top: 16px 24px;
   width: 100%;
+  height: 100px;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer nav {
+  margin: 16px 24px auto auto;
+}
+
+footer span {
+  margin: 16px auto auto 24px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer nav li {
+  margin-left: 16px;
 }
