@@ -230,7 +230,7 @@ p {
   text-align: center;
 }
 
-.courses {
+.desktopCourses {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -240,7 +240,7 @@ p {
   margin: 0 56px;
 }
 
-.course {
+.desktopCourse {
   background-color: white;
   text-align: left;
 
@@ -252,21 +252,21 @@ p {
   color: #9B9B9B;
 }
 
-.course img {
+.desktopCourse img {
   width: 100%;
   height: auto;
 }
 
-.course h3 {
+.desktopCourse h3 {
   padding: 16px;
   color: #4A4A4A;
 }
 
-.course span {
+.desktopCourse span {
   padding: 8px 16px;
 }
 
-.course p {
+.desktopCourse p {
   padding: 8px 16px 24px 16px;
 }
 
@@ -349,4 +349,138 @@ footer nav ul {
 
 footer nav li {
   margin-left: 16px;
+}
+
+header .mobile {
+  display: none;
+}
+
+header .mobile img {
+  height: 2.1em;
+}
+
+.mobileImage {
+  display: none;
+}
+
+.mobileCourses{
+  display: none;
+}
+
+@media only screen and (max-width: 830px) {
+  header span {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    justify-content: space-around;
+
+    height: 100%;
+  }
+
+  header nav {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  header ul .mobile {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .mainBanner {
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  .mainBanner img {
+    width: 100%;
+  }
+
+  .mainBanner .callToAction {
+    margin-left: 16px;
+  }
+
+  .infoMain {
+    display: none;
+  }
+
+  .info {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .desktopImage {
+    display: none;
+  }
+
+  .mobileImage {
+    display: block;
+  }
+
+  .info img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .infoSide li:last-child {
+    background-color: #F3F5F5;
+  }
+
+  .desktopCourses{
+    display: none;
+  }
+
+  .mobileCourses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .mobileCourse{
+    width: 80%;
+    padding: 16px;
+    margin-bottom: 8px;
+    background-color: #D8D8D8;
+  }
+
+  .cta {
+    background-color: #F3F5F5;
+  }
+
+  .thesis {
+    padding-bottom: 0;
+  }
+
+  .exhibit .side {
+    display: none;
+  }
+
+  .exhibit .main {
+    width: 100%;
+  }
+
+  .exhibit .main p,
+  .exhibit .main h3 {
+    display: none;
+  }
+
+  footer nav {
+    display: none;
+  }
+
+  footer span {
+    margin: 16px auto 16px 24px;
+  }
 }

@@ -10,7 +10,7 @@
 
     <!-- header -->
     <header>
-      <div class="container">
+      <div class="container desktop">
         <div class="logo">
           <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo" />
           <span class="bold">Colmar</span>
@@ -23,7 +23,15 @@
             <li>For Companies</li>
             <li>Sign in</li>
           </ul>
+
         </nav>
+      </div>
+
+      <div class="container mobile">
+        <img src="./resources/images/ic-logo.svg" alt="Logo" />
+        <img src="./resources/images/ic-on-campus.svg" alt="On Campus" />
+        <img src="./resources/images/ic-online.svg" alt="Online" />
+        <img src="./resources/images/ic-login.svg" alt="Sign in" />
       </div>
     </header>
 
@@ -59,7 +67,8 @@
           <ul>
             <li>
               <div class="info">
-                <img src="./resources/images/information-orientation.jpg" alt="Orientation" />
+                <img class="desktopImage" src="./resources/images/information-orientation.jpg" alt="Orientation" />
+                <img class="mobileImage" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation" />
                 <div class="description">
                   <h3>Orientation date</h3>
                   <span>Tue 10/11 & Wed 10/12: 8am-3pm</span><br>
@@ -69,7 +78,8 @@
             </li>
             <li>
               <div class="info">
-                <img src="./resources/images/information-campus.jpg" alt="Campus" />
+                <img class="desktopImage" src="./resources/images/information-campus.jpg" alt="Campus" />
+                <img class="mobileImage" src="./resources/images/information-campus-mobile.jpg" alt="Campus" />
                 <div class="description">
                   <h3>Our campus</h3>
                   <span>Find which campus is close by you</span><br>
@@ -79,7 +89,8 @@
             </li>
             <li>
               <div class="info">
-                <img src="./resources/images/information-guest-lecture.jpg" alt="Guest Lecture" />
+                <img class="desktopImage" src="./resources/images/information-guest-lecture.jpg" alt="Guest Lecture" />
+                <img class="mobileImage" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Guest Lecture" />
                 <div class="description">
                   <h3>Out guest lecture</h3>
                   <p>Join a keynote with Oliver Sack about music in medical treatment</p><br>
@@ -95,54 +106,63 @@
       <div class="cta">
         <h2>Start learning</h2>
 
-        <div class="courses">
-          <div class="course">
+        <div class="desktopCourses">
+          <div class="desktopCourse">
             <img src="./resources/images/course-software.jpg" alt="Software Engineering" />
             <h3>Software engineering</h3>
             <span>COURSES</span>
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
 
-          <div class="course">
+          <div class="desktopCourse">
             <img src="./resources/images/course-computer-art.jpg" alt="Computer Art" />
             <h3>Computer art</h3>
             <span>COURSES</span>
             <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
 
-          <div class="course">
+          <div class="desktopCourse">
             <img src="./resources/images/course-design.jpg" alt="Design" />
             <h3>Design</h3>
             <span>COURSES</span>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
 
-          <div class="course">
+          <div class="desktopCourse">
             <img src="./resources/images/course-data.jpg" alt="Data" />
             <h3>Data</h3>
             <span>COURSES</span>
             <p>Data Science, Big Data, SQL Data Visualization</p>
           </div>
 
-          <div class="course">
+          <div class="desktopCourse">
             <img src="./resources/images/course-business.jpg" alt="Business" />
             <h3>Business</h3>
             <span>COURSES</span>
             <p>Product Development, Business Development, Startup</p>
           </div>
 
-          <div class="course">
+          <div class="desktopCourse">
             <img src="./resources/images/course-marketing.jpg" alt="Marketing" />
             <h3>Marketing</h3>
             <span>COURSES</span>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
+
+        <div class="mobileCourses">
+          <span class="mobileCourse">Software Engineering</span>
+          <span class="mobileCourse">Computer art</span>
+          <span class="mobileCourse">Design</span>
+          <span class="mobileCourse">Data</span>
+          <span class="mobileCourse">Business</span>
+          <span class="mobileCourse">Marketing</span>
+        </div>
       </div>
 
       <!-- thesis section -->
       <div class="thesis">
-        <h2>Thesis exhibit</h2>
+        <h2>Thesis exhibits</h2>
 
         <div class="exhibit">
           <div class="main">
